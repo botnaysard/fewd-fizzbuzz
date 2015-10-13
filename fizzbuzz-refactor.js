@@ -7,7 +7,7 @@ function validateInput() {
     do {
       userInput = prompt("Please enter an integer to FizzBuzz:"); //do not use var, as value needs to be passed from within the fucntion to global
     }
-    while ((isNaN(userInput)) || (userInput % 1 != 0)); //pretty good, but doesn't catch negative numbers (fix that)
+    while ((isNaN(userInput)) || (userInput % 1 != 0) || (userInput < 0)); 
     console.log("User is the integer: " + userInput);
     return userInput;
 } 
